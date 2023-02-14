@@ -11,6 +11,7 @@ class MealItem extends StatelessWidget {
   final Complexity complexity;
   final Affordability affordability;
 
+  // ignore: use_key_in_widget_constructors
   const MealItem({
     required this.id,
     required this.title,

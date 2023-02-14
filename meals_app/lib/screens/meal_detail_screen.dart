@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../dummy_data.dart';
 
+// ignore: use_key_in_widget_constructors
 class MealDetailScreen extends StatelessWidget {
   static const routeName = '/meal-detail';
 
