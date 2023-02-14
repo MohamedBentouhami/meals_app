@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/main_drawer.dart';
 import './favorites_screen.dart';
 import './categories_screen.dart';
 
@@ -38,6 +39,7 @@ class _TabsScreenState extends State<TabsScreen> {
           BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Favorites'),
         ],
       ),
+      drawer: MainDrawer(),
     );
   }
 }
