@@ -1,5 +1,3 @@
-import 'package:meals_app/models/category.dart';
-
 enum Complexity { Simple, Challenging, Hard }
 
 enum Affordability {
