@@ -1,14 +1,15 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+
 import '../widgets/main_drawer.dart';
 
 // ignore: use_key_in_widget_constructors
 class FilterScreen extends StatefulWidget {
   static const routeName = '/filters';
   final Function saveFilters;
-  Map<String, bool> currenFilters;
+  final Map<String, bool> currenFilters;
 
-  FilterScreen(this.currenFilters, this.saveFilters);
+  // ignore: use_key_in_widget_constructors
+  const FilterScreen(this.currenFilters, this.saveFilters);
 
   @override
   State<FilterScreen> createState() => _FilterScreenState();
@@ -21,7 +22,6 @@ class _FilterScreenState extends State<FilterScreen> {
   var _lactoseFree = false;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _glutenFree = widget.currenFilters['gluten'] as bool;
     _lactoseFree = widget.currenFilters['lactose'] as bool;
@@ -39,6 +39,7 @@ class _FilterScreenState extends State<FilterScreen> {
     );
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(

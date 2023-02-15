@@ -5,8 +5,9 @@ import '../widgets/meal_item.dart';
 
 // ignore: use_key_in_widget_constructors
 class FavoritesScreen extends StatelessWidget {
-  List<Meal> _favoritesMeals;
-  FavoritesScreen(this._favoritesMeals);
+  final List<Meal> _favoritesMeals;
+  // ignore: use_key_in_widget_constructors
+  const FavoritesScreen(this._favoritesMeals);
 
   @override
   Widget build(BuildContext context) {

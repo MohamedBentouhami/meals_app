@@ -6,9 +6,10 @@ import './categories_screen.dart';
 
 // ignore: use_key_in_widget_constructors
 class TabsScreen extends StatefulWidget {
-  List<Meal> _favoritesMeals = [];
+  final List<Meal> _favoritesMeals;
 
-  TabsScreen(this._favoritesMeals);
+  // ignore: use_key_in_widget_constructors
+  const TabsScreen(this._favoritesMeals);
 
   @override
   State<TabsScreen> createState() => _TabsScreenState();
@@ -45,7 +46,7 @@ class _TabsScreenState extends State<TabsScreen> {
         onTap: _selectPage,
         backgroundColor: Theme.of(context).primaryColor,
         unselectedItemColor: Colors.white,
-        selectedItemColor: Theme.of(context).accentColor,
+        selectedItemColor: Theme.of(context).colorScheme.secondary,
         currentIndex: _selectPageIndex,
         items: const [
           BottomNavigationBarItem(
